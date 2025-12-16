@@ -1,4 +1,4 @@
-name: Spring Boot CI
+Build with Maven Wrappername: Spring Boot CI
 
 on:
   push:
@@ -19,5 +19,5 @@ jobs:
         with: java-version: '21'
           distribution: 'temurin'
 
-      - name: Build with Maven
-        run: mvn clean package
+      - name: Build with Maven Wrapper
+        run: ./mvnw clean package
